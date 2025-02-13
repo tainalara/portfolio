@@ -7,43 +7,58 @@
     <meta name="description" content="Projeto Portfólio">
     <meta name="author" content="Tainá Lara">
     <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <!-- Link para a Folha de Estilo da Página - CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Meu Perfil</title>
 </head>
 
 <body>
+	
     <!-- Cabeçalho da Página (header) -->
     <header>
+
         <!-- Div Conteudo do Cabeçalho -->
-        <div id="header_content">
+        <div id="header_content" class="flex">
+
             <!-- Titulo do Cabeçalho -->
             <div id="titulo">
+
                 <!-- Seu nome -->
                 <h1>Tainá Lara</h1>
+
             </div>
 
             <!-- Conteudo do Menu da Página (header) -->
             <div id="menu">
+
                 <!-- Menu da Página -->
                 <nav>
+
                     <!-- Marcadores não ordenados + links -->
                     <ul id="menu">
                         <li>
-                            <a href="index.html"> Home </a>
+                            <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="contato.html"> Contato </a>
+                            <a href="contato.html">Contato</a>
                         </li>
                     </ul>
+
                 </nav>
+
             </div>
+
         </div>
+
     </header>
 
     <!-- Seção Principal da Página (main) -->
     <main>
 
         <!-- Seção Formulário de Contato e Redes Sociais -->
-        <section id="contact">
+        <section id="contact" class="flex">
 
             <!-- Seção do Formulário -->
             <form action="#" method="submit" id="formulario">
@@ -67,9 +82,12 @@
             </form>
 
             <!-- Seção do Google Maps -->
-            <article id="mapa">
+            <article id="mapa" class="flex_start">
+
+                <div id="endereco">
                 <p>Alameda Barros, 200</p>
                 <p>Santa Cecília - São Paulo</p>
+                </div>
 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.46109181563!2d-46.66338651042509!3d-23.537347662467496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce583fb02d97eb%3A0x7f41d299cedff2!2sAlameda%20Barros%2C%20200%20-%20Santa%20Cecilia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001232-001!5e0!3m2!1spt-BR!2sbr!4v1738606201534!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
@@ -79,29 +97,28 @@
 
     </main>
 
-    <!-- Rodapé da Página (footer) -->
-    <footer>
+<!-- Rodapé da Página (footer) -->
+<footer class="flex">
 
-        <!-- Seção de Contato - Redes Sociais -->
-        <section id="redes_sociais">
+    <!-- Seção de Contato - Redes Sociais-->
+    <section id="redes_sociais">
 
-            <a href="">
-                <img src="assets/img/linkedin.svg" alt="LinkedIn" />
-            </a>
-            <a href="">
-                <img src="assets/img/github.svg" alt="Github" />
-            </a>
-            <a href="">
-                <img src="assets/img/instagram.svg" alt="Instagram" />
-            </a>
+        <a href="">
+            <img src="assets/img/linkedin.svg" alt="LinkedIn" class="social_icon"/>
+        </a>
+        <a href="">
+            <img src="assets/img/github.svg" alt="Github" class="social_icon"/>
+        </a>
+        <a href="">
+            <img src="assets/img/instagram.svg" alt="Instagram" class="social_icon"/>
+        </a>
 
-        </section>
+    </section>
 
-        <h3>
-            Feito com 🧡 por Tainá Lara ® 2025
-        </h3>
+    <h3>Feito por Tainá Lara - 2025</h3>
 
-    </footer>
+</footer>
+
 </body>
 
 </html>
